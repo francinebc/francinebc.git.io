@@ -1,6 +1,35 @@
 /** {
     outline: 1px solid red !important;
  }*/
+/**
+   Colour Scheme:
+   #353535 - DARK GREY
+   #555B6E - GREY BLUE
+   #808080 - LIGHT GREY
+
+   Fonts:
+   *    - font-family: 'Oxygen', sans-serif;
+   <h1> - light
+   <h2> - regular
+   <h3> - regular
+   <h4> - regular
+   <h5> - regular
+   <p>  - regular
+
+*/
+body {
+   font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+   color: #353535;
+}
  h2 {
-    color: black !important;
+   color: #555B6E;
+ }
+ h3 {
+   color: #808080;
+ }
+ h4 {
+   color: #808080;
  }
