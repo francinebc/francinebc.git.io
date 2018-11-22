@@ -9,6 +9,8 @@
 
    Fonts:
    *    - font-family: 'Oxygen', sans-serif;
+   font-family: 'Oxygen', sans-serif;
+   font-family: 'Lato', sans-serif;
    <h1> - light
    <h2> - regular
    <h3> - regular
@@ -32,4 +34,16 @@ h1 {
  }
  h4 {
    color: #808080;
+ }
+ p {
+   color: black;
+   font-family: 'Lato', sans-serif;
+ }
+
+ #heading {
+    font-weight: 300;
+    font-size: 400%;
+ }
+ #heading-subtitle {
+   font-size: 200%;
  }
