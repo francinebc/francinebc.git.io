@@ -39,6 +39,11 @@ h1 {
    color: black;
    font-family: 'Lato', sans-serif;
  }
+ hr {
+    color: #555B6E;
+    background-color: #555B6E;
+    height: 2px;
+ }
 
  #heading {
     font-weight: 300;
