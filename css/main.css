@@ -11,14 +11,8 @@
    *    - font-family: 'Oxygen', sans-serif;
    font-family: 'Oxygen', sans-serif;
    font-family: 'Lato', sans-serif;
-   <h1> - light
-   <h2> - regular
-   <h3> - regular
-   <h4> - regular
-   <h5> - regular
-   <p>  - regular
-
 */
+
 body {
    font-family: 'Oxygen', sans-serif;
 }
@@ -26,34 +20,50 @@ body {
 h1 {
    color: #353535;
 }
- h2 {
+h2 {
    color: #555B6E;
- }
- h3 {
+}
+h3 {
    color: #808080;
- }
- h4 {
+   font-size: 300%;
+}
+h4 {
    color: #808080;
- }
- p {
+   font-size: 200%;
+}
+h5 {
+  color: #353535;
+  font-size: 150%;
+}
+p {
    color: black;
    font-family: 'Lato', sans-serif;
- }
- hr {
+}
+hr {
     color: #555B6E;
     background-color: #555B6E;
     height: 2px;
- }
+}
 
- #heading {
+#heading {
     font-weight: 300;
     font-size: 400%;
- }
- #heading-subtitle {
+}
+#heading-subtitle {
    font-size: 200%;
- }
+}
 
- .profile-picture {
+.blog-subtitle {
+   font-size: 90%;  
+   margin-top: 0px;
+}
+
+.blog-question {
+  font-size: 90%;  
+  margin-top: 0px;
+}
+
+.profile-picture {
     padding-top: 15px;
- }
+}
 
