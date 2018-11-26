@@ -54,16 +54,104 @@
             </div>
         </div>
         <!---body-->
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md-12">
                 <a href="../landing/sprint2.html"><h1>Sprint 2</h1></a>
                 <h3>What is the difference between Margin, Border, and Padding?</h3>
                 <em><h2 class="blog-subtitle">A technical challenge from my second sprint</h2></em>
             </div>
         </div>
-        <!--BLOG Q and A-->
+        <!--hr-->
         <div class="row">
+                <div class="col-md-12">
+                    <hr class="small-hr">
+                </div>
+        </div>
+        <!--BLOG Q and A-->
+        <div class="row text-center">
             <div class="col-md-12">
+                <!--Q1-->
+                <h4>What do these terms mean?</h4>
+                <p>
+                    Margin, border and padding are all terms used to describe and define the space around content and they all surround the content.
+                </p>
+                <p>
+                    If you start in the centre with the content, the first layer surrounding the content is the padding. The next layer is the border and the final outer layer is the margin. In image 1 you can see the "content" surrounded by the padding, border and margin.
+                </p>
+                <figure class="centered-image text-center">
+                    <img src="../images/css-box-model.png" alt="Padding, border and margin surrounding content" class="img-responsive">
+                    <figcaption><u>Img. 1</u></figcaption>
+                    <figcaption>Content surrounded by padding, border and margin.</figcaption>
+                </figure>
+                <!--hr-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr class="small-hr">
+                    </div>
+                </div>
+
+                <!--Q2-->
+                <h4>When would we use them?</h4>
+                <p>
+                    <em>Padding</em> is the first layer that might be wrapped around some content. Padding is space between the content and the border. Padding is used to put room between the content and the box of the content's defined dimensions.
+                </p>
+                <p>
+                    The <em>order</em> is wrapped around the padding. If there is no padding then the content will be right up against the border. Borders can be coloured and dashed and have many other effects added. Borders are used to give an image emphasis or style.
+                </p>
+                <p>
+                    The <em>margin</em> is wrapped around the border. The border and the padding are both within the defined dimensions of the content. The margin is outside these defined dimensions. You use margins to give the content room between other items of content. You can think of margins as a bit like personal space, we don't want people entering our personal space!
+                </p>
+                <!--hr-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr class="small-hr">
+                    </div>
+                </div>
+                <!--Q3-->
+                <h4>How can we use them?</h4>
+                
+                <p>
+                    Padding, border and margin can all be defined and styled using CSS. You can change the value for each layer in a uniform way, or you can change the value for each side individually. Images 2-4 show a few different examples of using padding, border and margin. 
+                </p>
+                <!--Example images-->
+                <div class="sprint2-divs col-md-4 pink-outline">
+                <figure>
+                    <img class="sprint2-image2 pink-outline" src="http://placekitten.com/300/300" alt="A picture of a fluffy cat" class="img-responsive">
+                    <figcaption><u>Img. 2</u></figcaption>
+                    <figcaption>padding: 20px;</figcaption>
+                    <figcaption>border: dashed purple;</figcaption>
+                    <figcaption>margin: 20px;</figcaption>
+                </figure>
+                </div>
+                <div class="sprint2-divs col-md-4 pink-outline">
+                <figure>
+                    <img class="sprint2-image3 pink-outline" src="http://placekitten.com/300/300" alt="A picture of a fluffy cat" class="img-responsive">
+                    <figcaption><u>Img. 3</u></figcaption>
+                    <figcaption>padding: <em>0px</em>;</figcaption>
+                    <figcaption>border: dashed purple;</figcaption>
+                    <figcaption>margin: 20px;</figcaption>
+                </figure>
+                </div>
+                <div class="sprint2-divs col-md-4 pink-outline">
+                <figure>
+                    <img class="sprint2-image4 pink-outline" src="http://placekitten.com/300/300" alt="A picture of a fluffy cat" class="img-responsive">
+                    <figcaption><u>Img. 4</u></figcaption>
+                    <figcaption>padding: 20px;</figcaption>
+                    <figcaption>border: <em>none</em>;</figcaption>
+                    <figcaption>margin: <em>0px</em>;</figcaption>
+                </figure>
+                </div>
+                <!--Describing images-->
+                <p>
+                    The light pink lines show the borders of the content and the borders of the <em>div</em> that the content is inside of. Image 2 has space between the image and the border (padding), a pretty dashed purple border, and space between the outside of the content and the <em>div</em> it is nesting inside. You could change the colour of the padding by giving the image a background colour. Image 3 has no space between the border and the image because it has no padding. Image 4 has no border and no margin, but there is still a gap between the image and the box defining the dimensions of the image because it has padding. Image 4 is touching the top of the <em>div</em> it is nested in because the image has no margin.
+                </p>
+
+                <!--hr-->      
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr class="small-hr">
+                    </div>
+                </div>
             </div>
         </div>
 

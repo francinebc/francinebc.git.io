@@ -45,12 +45,8 @@ hr {
     height: 2px;
 }
 
-#heading {
-    font-weight: 300;
-    font-size: 400%;
-}
-#heading-subtitle {
-   font-size: 200%;
+.pink-outline {
+   outline: solid #d879bf thin;
 }
 
 .blog-subtitle {
@@ -66,4 +62,55 @@ hr {
 .profile-picture {
     padding-top: 15px;
 }
+
+.centered-image {
+   margin-left: auto;
+   margin-right: auto;
+   width: 400px;
+}
+
+.small-hr {
+   height: 1px;
+   width: 50%;
+}
+
+.sprint2-image2{
+   padding: 20px;
+   border: dashed purple;
+   margin: 20px;
+   height: 220px;
+   width: 220px;
+}
+
+.sprint2-image3{
+   padding: 0px;
+   border: dashed purple;
+   margin: 20px;
+   height: 220px;
+   width: 220px;
+}
+
+.sprint2-image4{
+   padding: 20px;
+   border: none purple;
+   margin-bottom: 40px;
+   height: 220px;
+   width: 220px;
+}
+
+.sprint2-divs{
+   height: 370px; 
+   margin-bottom: 30px;
+   margin-top: 30px;
+}
+
+
+#heading {
+   font-weight: 300;
+   font-size: 400%;
+}
+#heading-subtitle {
+  font-size: 200%;
+}
+
 
