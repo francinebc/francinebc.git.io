@@ -74,7 +74,7 @@ hr {
    width: 50%;
 }
 
-.sprint2-image2{
+.sprint2-image2 {
    padding: 20px;
    border: dashed purple;
    margin: 20px;
@@ -82,7 +82,7 @@ hr {
    width: 220px;
 }
 
-.sprint2-image3{
+.sprint2-image3 {
    padding: 0px;
    border: dashed purple;
    margin: 20px;
@@ -90,7 +90,7 @@ hr {
    width: 220px;
 }
 
-.sprint2-image4{
+.sprint2-image4 {
    padding: 20px;
    border: none purple;
    margin-bottom: 40px;
@@ -98,10 +98,14 @@ hr {
    width: 220px;
 }
 
-.sprint2-divs{
+.sprint2-divs {
    height: 370px; 
    margin-bottom: 30px;
    margin-top: 30px;
+}
+
+.blog-item-divs {
+   margin-bottom: 30px;
 }
 
 
