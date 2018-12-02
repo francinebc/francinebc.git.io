@@ -44,6 +44,12 @@ hr {
     background-color: #555B6E;
     height: 2px;
 }
+figure {
+   margin: 20px;
+}
+ol { 
+   text-align: center;
+}
 
 .pink-outline {
    outline: solid #d879bf thin;
