@@ -74,7 +74,7 @@
                 <!--Q1-->
                 <h5 class="text-center">What are the differences between HTML and CSS?</h5>
                 <p>
-                    The very basic relationship between HTML and CSS is that CSS makes the content you put on the page which is created using HTML look pretty. You use HTML to tell the browser wht to put on the page, what the headers will be, what wil be inside of the paragraphs, what images and links there will be. If you are making a birthday card for your friend then HTML is all the stuff you want to say in your card like "Happy Birthday!" and maybe a picture of some balloons. Without CSS, all the stuff you want to put in your birthday card is going to be clumped up together at the top of the first page. In image 1 you can see what this website's header bar would look like without any CSS. 
+                    The very basic relationship between HTML and CSS is that CSS makes the content you put on the page which is created using HTML look pretty. You use HTML to tell the browser wht to put on the page, what the headers will be, what wil be inside of the paragraphs, what images and links there will be. If you are making a birthday card for your friend then HTML is all the stuff you want to say in your card, such as "Happy Birthday!" and maybe a picture of some balloons. Without CSS, all the stuff you want to put in your birthday card is going to be clumped up together at the top of the first page. In image 1 you can see what this website's header bar would look like without any CSS. 
                 </p>
                 <figure class="centered-image text-center">
                     <img src="../images/no_css.png" alt="The header bar without any CSS">
@@ -102,7 +102,7 @@
                     <li>Brush teeth</li>
                 </ol>
                 <p> 
-                    Sometimes the control flow is interrupted. When you wake up you check the time and you woke up late! Now your control flow is changed because you have to skip breakfast. If you woke up on time then you would follow the normal order of things. When you think about it each activity is made up of smaller actions, brushing your teeth is really doing the same thing over and over until your mouth is clean, eating your breakfast is putting food into your mouth over and over until your bowl is empty. Brushing your teeth and eating breakfast can both be described as loops, something that you do over and over until a condition is met. 
+                    Sometimes the control flow is interrupted. When you wake up you check the time and you are already late! Now your control flow is changed because you have to skip breakfast. If you woke up on time then you would follow the normal order of things. When you think about it each activity is made up of smaller actions, brushing your teeth is really doing the same thing over and over until your mouth is clean, eating your breakfast is putting food into your mouth over and over until your bowl is empty. Brushing your teeth and eating breakfast can both be described as loops, something that you do over and over until a condition is met. 
                 </p>
                 <!--hr-->
                 <div class="row">
@@ -136,10 +136,22 @@
                 <!--Q4-->
                 <h5 class="text-center">What is the difference between accessing data from arrays and from objects?</h5>
                 <p>
-                    Arrays and objects are both ways of storing data in Javascript, except that objects are more powerful. Data stored in an array can only be accessed by its index. For example if we have this array: 
+                    Arrays and objects are both ways of storing data in Javascript, except that objects are more powerful. Data stored in an array can only be accessed by its index, array[index]. For example if we have this array and this object: 
                 </p>
-                <p class="text-center"><b>var myArray = [[0, "Hello"], [1,"World"], [2, "!"]];</b></p>
-                <p>To access "Hello" we would need to say: myArray[0][1], that is the 0th (first) array of myArray at the 1th (second) position.</p>
+                <pre class="centered-code" width = "700px">
+var myArray = [[0, "Hello"], [1,"World"]];
+
+var myObject = {
+    myName : "Francine",
+    myHeight : 175,
+    writeMyName : function () {
+        console.log(this.myName);
+    } 
+}
+                </pre>
+                <p>
+                    To access "Hello" we would need to say: myArray[0][1], that is the 0th (first) array of myArray at the 1th (second) position. Objects can contain data in a similar way to an array but they can also contain their own variables with variable names. To access a variable inside of an object we can say either object.variableName or object["variableName"], "variableName" is the same as an index for an array. If we want to know what the 'myName' attribute of myObject is, we can say myObject.myName or myObject["myName"].
+                </p>
                 <!--hr-->
                 <div class="row">
                     <div class="col-md-12">
@@ -149,7 +161,40 @@
                 <!--Q5-->
                 <h5 class="text-center">What is a function and when might we use one?</h5>
                 <p>
-               
+                    A function is a set of code you can call at any time. Maybe you want to print the first and last name of your students, "Bobby Jones" and "Sandy Helens". You could do it like this:
+                    
+                </p>
+                <pre class="centered-code" width = "700px">
+var students = [["Bobby", "Jones"], ["Sandy", "Helens"]];
+var printMe = "First name: " + students[0][0] + " Last Name: " + students[0][1];
+console.log(printMe);
+printMe = "First name: " + students[1][0] + " Last Name: " + students[1][1];
+console.log(printMe);
+                </pre>
+                <p>
+                    But this is confusing, long and not extendable, what if you had 100 students? An easier way of dealing with this is by making a method which takes a first and a last name and prints the message out.
+                </p>
+                <p class="text-center "><pre class="centered-code" width = "700px">
+function printFirstAndLastName (first, last){
+    console.log("First name: " + first + " Last Name: " + last);
+}
+
+var students = [["Bobby", "Jones"], ["Sandy", "Helens"]];
+
+printFirstAndLastName(students[0][0], students[0][1]);
+printFirstAndLastName(students[1][0], students[1][1]);
+                </pre></p>
+                <p>
+                    Why not just put the code into a loop? Why make a function? We could do this:
+                </p>
+                <pre class="centered-code" width = "700px">
+var students = [["Bobby", "Jones"], ["Sandy", "Helens"]];
+for(var i=0; i&ltstudents.length; i++){
+    console.log("First name: " + students[i][0] + " Last Name: " + students[i][1]);
+}
+                </pre>
+                <p>
+                    The problem with just putting it into a loop is that if we need to do this anywhere else in our program and we don't need to write the code all out again. The other bonus about using methods, other than reducing lines of code is increasing readability. Using printFirstAndLastName(a, b) is clearer when reading through code than seeing console.log("First name: " + students[i][0] + " Last Name: " + students[i][1]); all over the place.
                 </p>
                 <!--hr-->
                 <div class="row">
