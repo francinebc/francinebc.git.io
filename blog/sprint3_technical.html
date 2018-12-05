@@ -138,7 +138,7 @@
                 <p>
                     Arrays and objects are both ways of storing data in Javascript, except that objects are more powerful. Data stored in an array can only be accessed by its index, array[index]. For example if we have this array and this object: 
                 </p>
-                <pre class="centered-code">
+                <pre>
 var myArray = [[0, "Hello"], [1,"World"]];
 
 var myObject = {
@@ -147,8 +147,7 @@ var myObject = {
     writeMyName : function () {
         console.log(this.myName);
     } 
-}
-                </pre>
+}</pre>
                 <p>
                     To access "Hello" we would need to say: myArray[0][1], that is the 0th (first) array of myArray at the 1th (second) position. Objects can contain data in a similar way to an array but they can also contain their own variables with variable names. To access a variable inside of an object we can say either object.variableName or object["variableName"], "variableName" is the same as an index for an array. If we want to know what the 'myName' attribute of myObject is, we can say myObject.myName or myObject["myName"].
                 </p>
@@ -164,27 +163,25 @@ var myObject = {
                     A function is a set of code you can call at any time. Maybe you want to print the first and last name of your students, "Bobby Jones" and "Sandy Helens". You could do it like this:
                     
                 </p>
-                <pre class="centered-code">
+                <pre>
 var students = [["Bobby", "Jones"], ["Sandy", "Helens"]];
 var printMe = "First name: " + students[0][0] + " Last Name: " + students[0][1];
 console.log(printMe);
 printMe = "First name: " + students[1][0] + " Last Name: " + students[1][1];
-console.log(printMe);
-                </pre>
+console.log(printMe);</pre>
                 <p>
                     But this is confusing, long and not extendable, what if you had 100 students? Why not just put the code into a loop?
                 </p>
-                <pre class="centered-code">
+                <pre>
 var students = [["Bobby", "Jones"], ["Sandy", "Helens"]];
 for(var i=0; i&ltstudents.length; i++){
     console.log("First name: " + students[i][0] + " Last Name: " + students[i][1]);
-}
-                </pre>
+}</pre>
                 <p>
                     The problem with just putting it into a loop is that if we need to print their names anywhere else in our program, such as after editting their details, we have to write it all out again. An easier way of dealing with this is by making a method which takes a first and a last name and prints the message out. 
                 </p>
                 
-                <p class="text-center "><pre class="centered-code">
+                <pre>
 function printFirstAndLastName (first, last){
     console.log("First name: " + first + " Last Name: " + last);
 }
@@ -192,8 +189,7 @@ function printFirstAndLastName (first, last){
 var students = [["Bobby", "Jones"], ["Sandy", "Helens"]];
 for(var i=0; i&ltstudents.length; i++){
     printFirstAndLastName(students[i][0], students[i][1]);
-}
-                </pre></p>
+}</pre>
                 <p>
                     The other bonus about using methods, other than reducing lines of code is increasing readability. Using printFirstAndLastName(a, b) is clearer when reading through code than seeing console.log("First name: " + students[i][0] + " Last Name: " + students[i][1]); all over the place. 
                 </p>
